@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
 import { products } from '../products';
 
 @Component({
@@ -15,13 +14,9 @@ export class ProductListComponent {
   }
 }
 
-export class ProductAlertsComponent implements OnInit {
-  @Input() product;
-  constructor() { }
-
-  ngOnInit() {
+onNotify() {
+    window.alert('You will be notified when the product goes on sale');
   }
-
 }
 
 /*
